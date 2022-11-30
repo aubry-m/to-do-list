@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <title>To-do List</title>
+    <link rel = "stylesheet" href = "main.css">
+    <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class = "container"> 
+        <!--<header> To-Do List </header>-->
+        <div class = "new-to-do">
+            <img src="bars.svg" alt="icon"> <!-- edit -->
+            <input type = "text" placeholder = "New Task">
+            <!--<button><i class = "fa fa-plus"></i></button> -->
+        </div>
+        <div class = "controls">
+            <div class = "filters">
+                <span id = "all"> All Tasks </span>
+                <span id = "pending"> In Progress </span>
+                <span id = "done"> Done </span>
+            </div>
+            <button class = "clear" > Clear All </button>
+        </div>
+        <ul class = "task-box">
+            <li class = "tasks">
+                <label for = "1">
+                    <input type = "checkbox" id = "1">
+                    <p> Study chem lecture notes </p>
+                </label>
+                <div class = "settings"> 
+                    <i class = "uil uil-ellipsis-h"></i>
+                    <ul class = "task-menu"> 
+                        <li><i class="uil uil-pen"></i>Edit</li>
+                        <li><i class="uil uil-trash"></i>Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class = "tasks">
+                <label for = "1">
+                    <input type = "checkbox" id = "1">
+                    <p> Do HIIT workout </p>
+                </label>
+                <div class = "settings"> 
+                    <i class = "uil uil-ellipsis-h"></i>
+                    <ul class = "task-menu"> 
+                        <li><i class="uil uil-pen"></i>Edit</li>
+                        <li><i class="uil uil-trash"></i>Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class = "tasks">
+                <label for = "1">
+                    <input type = "checkbox" id = "1">
+                    <p> Wash dishes </p>
+                </label>
+                <div class = "settings"> 
+                    <i class = "uil uil-ellipsis-h"></i>
+                    <ul class = "task-menu"> 
+                        <li><i class="uil uil-pen"></i>Edit</li>
+                        <li><i class="uil uil-trash"></i>Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <!--<li>Study chem lecture notes <i class ="fa fa-trash"></i></li>
+            <li> Do HIIT workout <span><i class = "fa fa-trash"></i></span></li>
+            <li> Wash dishes <span><i class = "fa fa-trash"> </i></span></li>-->
+        <!--</ul>
+            <div class = "footer">
+            <span> Four tasks </span>
+            <button> Delete All </button>
+        </div>-->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

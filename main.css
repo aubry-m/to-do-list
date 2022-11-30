@@ -3,6 +3,8 @@
     src: url(fontsfree-net-migra-extralight.ttf);
     font-family: font2;
     src: url(tenorsans-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -13,58 +15,37 @@
 }
 
 body {
-    /*height: 100vh;
-    width: 100%;*/
-   
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background: linear-gradient(to bottom, rgb(104, 140, 104) 0%, rgb(212, 235, 210) 100%);
+    font-family: font1, font2;
+}
 
-    background: linear-gradient(to bottom, blue 0%, white 100%);
+header {
+    height: 70px;
+    padding: 10px 0 10px;
+    font-family: font1;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 400;
+    padding-left: 135px;
 }
 
 ::selection {
-    color: white;
-    background: blue;
+    color: rgb(216, 216, 216);
+    background: rgb(71, 97, 76);
 }
 
 .container {
-    /*margin: 120px auto;
-    max-width: 400px;
-    width: 100%;
-    background: white;
-    border-radius: 5px;
-    padding: 25px;*/
-
     max-width: 405px;
-    padding: 28px 0 30px;
+    padding: 25px 0 30px;
     margin: 137px auto;
-    background: white;
+    background: rgb(236, 235, 230);
     border-radius: 7px;
-    box-shadow: 0 10px 30px black;
 }
-
-/*.container header {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.container .new-to-do {
-    display: flex;
-    height: 45px;
-    width: 100%;
-    margin: 20px 0;
-}*/
 
 .new-to-do {
-    /*outline: none;
-    width: 85%;
-    height: 100%;
-    border: 1px solid wheat;
-    font-size: 17px;
-    border-radius: 3px;
-    padding-left: 15px;*/
-    
     height: 52px;
     padding: 0 25px;
     position: relative;
@@ -88,7 +69,7 @@ body {
 
 .new-to-do input:focus, .new-to-do input.active {
   padding-left: 52px;
-  border: 2px solid blue;
+  border: 2px solid rgb(151, 176, 154);
 }
 .new-to-do input::placeholder {
   color: #bfbfbf;
@@ -115,7 +96,7 @@ body {
 }
 
 .filters span.active {
-  color: #3C87FF;
+  color: rgb(104, 140, 104);
 }
 
 .controls .clear {
@@ -130,7 +111,7 @@ body {
   letter-spacing: 0.3px;
   pointer-events: none;
   transition: transform 0.25s ease;
-  background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+  background: linear-gradient(135deg, rgb(83, 124, 83) 0%, rgb(149, 189, 144) 100%);
 }
 .clear.active {
   opacity: 0.9;
@@ -181,7 +162,7 @@ body {
 .tasks label input{
   margin-top: 6px;
   margin-right: 12px;
-  accent-color: #3C87FF;
+  accent-color: rgb(212, 235, 210);
 }
 
 .tasks .settings {
@@ -213,7 +194,6 @@ body {
   border-radius: 4px;
   transform: scale(0);
   transform-origin: top right;
-  box-shadow: 0 0 6px black;
   transition: transform 0.2s ease;
 }
 .task-box .tasks:last-child .task-menu{
@@ -274,69 +254,3 @@ body {
     margin-top: 4px;
   }
 }
-
-/*.new-to-do button {
-    width: 60px;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: plum;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    border-radius: 3px;
-    margin-left: 5px;
-}
-
-.container .tasks {
-    max-height: 250px;
-    overflow-y: auto;
-}
-
-.tasks li {
-    list-style: none;
-    height: 45px;
-    line-height: 45px;
-    position: relative;
-    background: whitesmoke;
-    border-radius: 3px;
-    margin-bottom: 8px;
-    padding: 0 15px;
-    cursor: default;
-    overflow: hidden;
-}
-
-.tasks li span {
-    position: absolute;
-    right: -45px;
-    color: white;
-    width: 45px;
-    text-align: center;
-    background: red;
-    border-radius: 0px 3px 3px 0px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.tasks li:hover span {
-    right: 0px;
-}
-
-.container .footer {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.footer button {
-    border: none;
-    outline: none;
-    background: plum;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 6px 10px;
-}*/
